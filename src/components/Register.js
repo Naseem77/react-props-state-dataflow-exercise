@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 class Register extends Component {
   render() {
     return (<div id="register">
-      {/* your code here */}
+      <h2>Register</h2>
+      {this.props.reservations.map(r => { return <div key={r.name}>{r.day} @ {r.time}</div> })}
     </div>)
   }
 }

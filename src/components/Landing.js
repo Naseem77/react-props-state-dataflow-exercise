@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
 class Landing extends Component {
-    /* your code here */
 
 
     render() {
-        return {/* your code here */ }
+        return (
+            <div>Welcome,{this.props.user}. The Hottest item is: {this.props.store.item} for {this.props.store.price} </div>
+
+        )
 
     }
 }
